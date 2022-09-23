@@ -11,7 +11,7 @@
 	background: #f1f1f1;
 	display: flex;
 	position: relative;
-	z-index: 2;
+	z-index: 3;
  }
  nav .mobile-bar {
 	flex-direction: column;
@@ -123,4 +123,37 @@ video {
 	height: 100%;
 	z-index: 1;
 	object-fit: cover;
+}
+
+
+section {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 2;
+}
+section h2 {
+	color: #314547;
+	font-size: 80px;
+	font-family: sans-serif;
+	text-transform: uppercase;
+}
+@media (max-width: 768px) {
+	section h2 {
+		font-size: 60px;
+	}
+}
+@media (max-width: 480px) {
+	section h2 {
+		font-size: 40px;
+	}
+}
+.glow span {
+	transition: all 0.3s;
+}
+.glow span:hover {
+	text-shadow: 0 0 10px #fb06be, 0 0 30px #fb06be, 0 0 80px #fb06fb;
+	color: #fff;
 }
